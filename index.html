@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave a tip for Steve?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 960px;
+      padding: clamp(1rem, 4vw, 3rem);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      font-weight: 400;
+      color: #555555;
+      margin-bottom: clamp(1rem, 3vw, 3rem);
+    }
+
+    .tip-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background-color: #3d7de8;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Roboto', sans-serif;
+      font-size: clamp(1.25rem, 3.5vw, 2.625rem);
+      font-weight: 400;
+      cursor: default;
+      padding: clamp(1.25rem, 5vw, 3.75rem) clamp(0.5rem, 2vw, 1.5rem);
+      transition: background-color 0.15s ease;
+    }
+
+    .btn:hover {
+      background-color: #2d6dd8;
+      cursor: pointer;
+    }
+
+    .btn-custom {
+      width: 100%;
+      font-size: clamp(0.875rem, 2.5vw, 1.875rem);
+      padding: clamp(0.625rem, 2.5vw, 1.875rem) clamp(0.5rem, 2vw, 1.5rem);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Leave a tip for Steve?</h1>
+    <div class="tip-grid">
+      <button class="btn">15%</button>
+      <button class="btn">20%</button>
+      <button class="btn">25%</button>
+    </div>
+    <button class="btn btn-custom">Custom tip</button>
+  </div>
+</body>
+</html>
